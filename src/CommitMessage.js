@@ -1,0 +1,15 @@
+import React from 'react';
+import PropTypes from "prop-types";
+import './index.css'
+
+const CommitMessage = ({ commit }) => (
+    <span className="commit-message">
+      {commit.message}
+  </span>
+);
+
+CommitMessage.propTypes = {
+    commit: PropTypes.object
+};
+
+export default CommitMessage;
